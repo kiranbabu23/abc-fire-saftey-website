@@ -93,4 +93,9 @@ export class MemStorage implements IStorage {
   }
 }
 
-export const storage = new MemStorage();
+import { DbStorage } from './db-storage';
+
+// Use DbStorage instead of MemStorage for production
+export const storage = process.env.NODE_ENV === 'test' 
+  ? new MemStorage() 
+  : new DbStorage();
