@@ -2,8 +2,12 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertContactRequestSchema, insertBookingSchema } from "@shared/schema";
+import { initializeEmailTransporter, sendContactRequestEmail } from "./services/email";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Initialize email service if credentials are available
+  initializeEmailTransporter();
+  
   // API routes, prefix with /api
   
   // Handle contact form submissions
@@ -11,6 +15,17 @@ export async function registerRoutes(app: Express): Promise<Server> {
     try {
       const validatedData = insertContactRequestSchema.parse(req.body);
       const contactRequest = await storage.createContactRequest(validatedData);
+      
+      // Attempt to send email notification
+      try {
+        await sendContactRequestEmail(contactRequest);
+        // Note: We don't wait for email to be sent before responding to the client
+        // If email fails, we still want to save the contact request in the database
+      } catch (emailError) {
+        console.error("Failed to send email notification:", emailError);
+        // We don't return this error to the client
+      }
+      
       res.status(201).json({
         message: "Contact request submitted successfully",
         id: contactRequest.id
