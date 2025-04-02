@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import benefitsCardsImg from "../assets/benefits-cards.png";
+import VideoGallery from "../components/videos/VideoGallery";
 
 // Service Overview Card
 const ServiceCard = ({ title, description, icon }: { title: string; description: string; icon: React.ReactNode }) => (
@@ -46,6 +47,24 @@ const TestimonialCard = ({
 );
 
 const HomePage = () => {
+  // Videos data - Replace these with your actual YouTube video IDs
+  const videos = [
+    {
+      id: "dQw4w9WgXcQ", // Replace with your actual YouTube video ID
+      title: "Fire Extinguisher Training",
+      description: "Learn how to properly use different types of fire extinguishers in this training video."
+    },
+    {
+      id: "dQw4w9WgXcQ", // Replace with your actual YouTube video ID
+      title: "Fire Safety Inspection Process",
+      description: "Watch our certified technicians perform a comprehensive fire safety inspection."
+    },
+    {
+      id: "dQw4w9WgXcQ", // Replace with your actual YouTube video ID
+      title: "Fire Risk Assessment",
+      description: "See how we conduct thorough fire risk assessments for commercial properties."
+    }
+  ];
 
   // Services data
   const services = [
@@ -177,6 +196,16 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Our Work Videos Section */}
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-neutral-500 mb-4">Our Work in Action</h2>
+          <p className="max-w-2xl mx-auto text-neutral-400">Watch videos of our team providing fire safety services and training.</p>
+        </div>
+        
+        <VideoGallery videos={videos} />
+      </section>
+      
       {/* Testimonials Section */}
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-12">
