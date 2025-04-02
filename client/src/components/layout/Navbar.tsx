@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "wouter";
+import logo from "../../assets/logo.svg";
 
 interface NavbarProps {
   currentPath: string;
@@ -22,8 +23,8 @@ const Navbar = ({ currentPath }: NavbarProps) => {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <Link href="/">
-              <a className="text-primary font-bold text-2xl">
-                <span className="text-primary">ABC</span> Fire Security
+              <a className="flex items-center">
+                <img src={logo} alt="ABC Fire Security Logo" className="h-12" />
               </a>
             </Link>
           </div>
