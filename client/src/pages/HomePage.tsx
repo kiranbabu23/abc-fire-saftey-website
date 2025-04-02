@@ -47,22 +47,22 @@ const TestimonialCard = ({
 );
 
 const HomePage = () => {
-  // Videos data - Replace these with your actual YouTube video IDs
+  // Videos data with the actual YouTube video IDs
   const videos = [
     {
-      id: "dQw4w9WgXcQ", // Replace with your actual YouTube video ID
+      id: "Gmi1dTP4DMo", // Fire Prevention
+      title: "Fire Prevention and Safety Guidelines",
+      description: "Learn essential fire prevention techniques and safety guidelines for your home and workplace."
+    },
+    {
+      id: "cVjyDgFrb2g", // Fire Extinguisher Training
       title: "Fire Extinguisher Training",
-      description: "Learn how to properly use different types of fire extinguishers in this training video."
+      description: "Watch how to properly operate different types of fire extinguishers for various fire situations."
     },
     {
-      id: "dQw4w9WgXcQ", // Replace with your actual YouTube video ID
-      title: "Fire Safety Inspection Process",
-      description: "Watch our certified technicians perform a comprehensive fire safety inspection."
-    },
-    {
-      id: "dQw4w9WgXcQ", // Replace with your actual YouTube video ID
-      title: "Fire Risk Assessment",
-      description: "See how we conduct thorough fire risk assessments for commercial properties."
+      id: "o-ylvugYc0w", // Fire Safety Training
+      title: "Fire Safety Training and Emergency Procedures",
+      description: "Comprehensive training on fire safety procedures and emergency evacuation protocols."
     }
   ];
 
