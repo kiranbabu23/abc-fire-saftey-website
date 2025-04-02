@@ -92,17 +92,17 @@ const HomePage = () => {
   const testimonials = [
     {
       quote: "ABC Fire Safety provided exceptional service when installing fire extinguishers throughout our office building. Their team was professional, knowledgeable, and efficient.",
-      name: "John Smith",
+      name: "Ramesh Reddy",
       title: "Office Manager, XYZ Corporation"
     },
     {
       quote: "We've been using ABC Fire Safety for our annual inspections for the past 5 years. Their attention to detail and thorough assessments give us peace of mind knowing we're well-protected.",
-      name: "Sarah Johnson",
+      name: "Nandana",
       title: "Restaurant Owner"
     },
     {
       quote: "When we needed a comprehensive fire risk assessment for our warehouse, ABC Fire Security delivered beyond expectations. They identified issues we hadn't noticed and provided practical solutions.",
-      name: "Michael Brown",
+      name: "Sandeep Agarwal",
       title: "Facilities Manager, Logistics Inc."
     }
   ];
