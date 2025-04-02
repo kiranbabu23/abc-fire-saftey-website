@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background shield shape -->
-  <path d="M40 5 C 25 5, 5 15, 5 30 C 5 45, 25 55, 40 55 L 160 55 C 175 55, 195 45, 195 30 C 195 15, 175 5, 160 5 Z" fill="#dc2626" />
+  <!-- Background rectangle -->
+  <rect x="5" y="5" width="190" height="50" rx="8" ry="8" fill="white" stroke="#dc2626" stroke-width="2" />
   
-  <!-- White inner shield for contrast -->
-  <path d="M40 10 C 28 10, 10 18, 10 30 C 10 42, 28 50, 40 50 L 160 50 C 172 50, 190 42, 190 30 C 190 18, 172 10, 160 10 Z" fill="white" />
-  
-  <!-- Flame icon -->
-  <path d="M30 17 C 28 22, 24 26, 25 30 C 26 34, 30 35, 30 35 C 30 35, 34 34, 35 30 C 36 26, 32 22, 30 17 Z" fill="#dc2626" />
+  <!-- Large Fire Symbol -->
+  <g transform="translate(20, 8) scale(1.2)">
+    <!-- Main flame -->
+    <path d="M20 5 C 17 13, 10 18, 12 28 C 14 38, 20 42, 20 42 C 20 42, 26 38, 28 28 C 30 18, 23 13, 20 5 Z" fill="#dc2626" />
+    
+    <!-- Inner flame detail -->
+    <path d="M20 14 C 18 20, 14 22, 15 28 C 16 34, 20 36, 20 36 C 20 36, 24 34, 25 28 C 26 22, 22 20, 20 14 Z" fill="#ff4500" />
+    
+    <!-- Center highlight -->
+    <path d="M20 22 C 19 25, 17 27, 18 30 C 19 33, 20 34, 20 34 C 20 34, 21 33, 22 30 C 23 27, 21 25, 20 22 Z" fill="#ffdd00" />
+  </g>
   
   <!-- Text ABC -->
-  <text x="50" y="32" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#dc2626">ABC</text>
+  <text x="65" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#dc2626">ABC</text>
   
   <!-- Text FIRE SECURITY -->
-  <text x="95" y="32" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#dc2626">FIRE</text>
-  <text x="95" y="45" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">SECURITY</text>
+  <text x="108" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#dc2626">FIRE</text>
+  <text x="108" y="45" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">SECURITY</text>
 </svg>
