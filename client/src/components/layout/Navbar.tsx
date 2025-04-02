@@ -23,7 +23,7 @@ const Navbar = ({ currentPath }: NavbarProps) => {
           <div className="flex items-center">
             <Link href="/">
               <a className="text-primary font-bold text-2xl">
-                <span className="text-primary">ABC</span> Fire Safety
+                <span className="text-primary">ABC</span> Fire Security
               </a>
             </Link>
           </div>

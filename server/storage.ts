@@ -3,6 +3,7 @@ import {
   contactRequests, type ContactRequest, type InsertContactRequest,
   bookings, type Booking, type InsertBooking 
 } from "@shared/schema";
+import { z } from "zod";
 
 export interface IStorage {
   getUser(id: number): Promise<User | undefined>;
@@ -60,7 +61,9 @@ export class MemStorage implements IStorage {
     const contactRequest: ContactRequest = { 
       ...insertContactRequest, 
       id,
-      createdAt: now
+      createdAt: now,
+      phone: insertContactRequest.phone || null,
+      serviceInterest: insertContactRequest.serviceInterest || null
     };
     this.contactRequestsData.set(id, contactRequest);
     return contactRequest;
@@ -77,7 +80,8 @@ export class MemStorage implements IStorage {
     const booking: Booking = { 
       ...insertBooking, 
       id,
-      createdAt: now
+      createdAt: now,
+      notes: insertBooking.notes || null
     };
     this.bookingsData.set(id, booking);
     return booking;

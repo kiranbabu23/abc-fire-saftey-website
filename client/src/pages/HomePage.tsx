@@ -141,7 +141,7 @@ const HomePage = () => {
       title: "Restaurant Owner"
     },
     {
-      quote: "When we needed a comprehensive fire risk assessment for our warehouse, ABC Fire Safety delivered beyond expectations. They identified issues we hadn't noticed and provided practical solutions.",
+      quote: "When we needed a comprehensive fire risk assessment for our warehouse, ABC Fire Security delivered beyond expectations. They identified issues we hadn't noticed and provided practical solutions.",
       name: "Michael Brown",
       title: "Facilities Manager, Logistics Inc."
     }
@@ -175,7 +175,7 @@ const HomePage = () => {
       {/* Why Choose Us Section */}
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-neutral-500 mb-4">Why Choose ABC Fire Safety</h2>
+          <h2 className="text-3xl font-bold text-neutral-500 mb-4">Why Choose ABC Fire Security</h2>
           <p className="max-w-2xl mx-auto text-neutral-400">With over 15 years of experience, we deliver top-quality fire safety services to businesses and homeowners.</p>
         </div>
 

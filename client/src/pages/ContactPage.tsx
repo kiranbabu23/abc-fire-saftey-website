@@ -97,7 +97,7 @@ const ContactPage = () => {
                     </svg>
                     <div>
                       <h3 className="font-semibold text-lg">Address</h3>
-                      <p className="mt-1">123 Safety Street<br />Firetown, ST 12345</p>
+                      <p className="mt-1">Duggirala<br />Guntur District<br />Andhra Pradesh, 522305</p>
                     </div>
                   </div>
                   
@@ -107,8 +107,8 @@ const ContactPage = () => {
                     </svg>
                     <div>
                       <h3 className="font-semibold text-lg">Phone</h3>
-                      <p className="mt-1">(555) 123-4567</p>
-                      <p className="text-sm mt-1">Mon-Fri: 8am - 6pm</p>
+                      <p className="mt-1">Contact us for phone information</p>
+                      <p className="text-sm mt-1">9 AM to 9 PM daily</p>
                     </div>
                   </div>
                   
@@ -118,7 +118,7 @@ const ContactPage = () => {
                     </svg>
                     <div>
                       <h3 className="font-semibold text-lg">Email</h3>
-                      <p className="mt-1">info@abcfiresafety.com</p>
+                      <p className="mt-1">abcfires6@gmail.com</p>
                     </div>
                   </div>
                   
@@ -128,7 +128,7 @@ const ContactPage = () => {
                     </svg>
                     <div>
                       <h3 className="font-semibold text-lg">Business Hours</h3>
-                      <p className="mt-1">Monday-Friday: 8am - 6pm<br />Saturday: 9am - 2pm<br />Sunday: Closed</p>
+                      <p className="mt-1">9 AM to 9 PM<br />All days of the week</p>
                     </div>
                   </div>
                 </div>
